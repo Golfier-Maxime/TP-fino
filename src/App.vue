@@ -58,7 +58,7 @@ import { RouterLink, RouterView } from "vue-router";
               <RouterLink class="dropdown-item" to="/Pie"> Pie</RouterLink>
 
               <a class="dropdown-item" href="#">Area</a>
-              <a class="dropdown-item" href="#">Radar</a>
+              <RouterLink class="dropdown-item" to="/Radar"> Radar</RouterLink>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Animation</a>
             </div>
