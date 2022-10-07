@@ -18,48 +18,48 @@ let lstDataGares = ref();
 onMounted(async () => {
   await getVillageois().then((response) => {
     listeVillageois.value = response;
-    console.log("liste villageois", listeVillageois);
+
     //
     lstLabelsVillageois.value = getLabels(
-      listeVillageois,
+      listeVillageois.value,
       "laSpecialite.nom#1"
     );
     console.log("labels villageois", lstLabelsVillageois);
     //
     lstDataVillageois.value = countDatas(
-      listeVillageois,
-      lstLabelsVillageois,
+      listeVillageois.value,
+      lstLabelsVillageois.value,
       "laSpecialite.nom#1"
     );
-    console.log("data villaeois", lstDataVillageois);
+    console.log("data villaeois", lstDataVillageois.value);
   });
   await getVideos().then((response) => {
     listeVideos.value = response;
-    console.log("liste videos", listeVideos);
+
     //
-    lstLabelsVideos.value = getLabels(listeVideos, "lesCategories.lib#multi");
-    console.log("labels videos", lstLabelsVideos);
+    lstLabelsVideos.value = getLabels(listeVideos.value, "lesCategories.lib#multi");
+    console.log("labels videos", lstLabelsVideos.value);
     //
     lstDataVideos.value = countDatas(
-      listeVideos,
-      lstLabelsVideos,
+      listeVideos.value,
+      lstLabelsVideos.value,
       "lesCategories.lib#multi"
     );
-    console.log("data videos", lstDataVideos);
+    console.log("data videos", lstDataVideos.value);
   });
   await getGares("Doubs").then((response) => {
     listeGares.value = response.records;
-    console.log("liste gares", listeGares);
+
     //
-    lstLabelsGares.value = getLabels(listeGares, "fields.commune#1");
+    lstLabelsGares.value = getLabels(listeGares.value, "fields.commune#1");
     console.log("labels Gares", lstLabelsGares);
     //
     lstDataGares.value = countDatas(
-      listeGares,
-      lstLabelsGares,
+      listeGares.value,
+      lstLabelsGares.value,
       "fields.commune#1"
     );
-    console.log("data gares", lstDataGares);
+    console.log("data gares", lstDataGares.value);
   });
 });
 </script>

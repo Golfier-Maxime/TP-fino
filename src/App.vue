@@ -7,15 +7,8 @@ import { RouterLink, RouterView } from "vue-router";
     <nav class="navbar navbar-expand-lg navbar-dark justify-content-between">
       <RouterLink class="navbar-brand" to="/">VueJs-ChartJs </RouterLink>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -31,6 +24,9 @@ import { RouterLink, RouterView } from "vue-router";
           <li class="nav-item">
             <a class="nav-link" href="/Service">Services</a>
           </li>
+          <li>
+            <a class="nav-link" href="/Service2">Services 2</a>
+          </li>
           <li class="nav-item">
             <RouterLink class="nav-link" to="/Map">Géoloc</RouterLink>
           </li>
@@ -38,21 +34,12 @@ import { RouterLink, RouterView } from "vue-router";
             <RouterLink class="nav-link" to="/Sncf">SNCF</RouterLink>
           </li>
           <li class="nav-item dropdown mr-0">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="dropdown01"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               ChartJs
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <RouterLink class="dropdown-item" to="/barchart"
-                >Barchart</RouterLink
-              >
+              <RouterLink class="dropdown-item" to="/barchart">Barchart</RouterLink>
               <a class="dropdown-item" href="/LineChart">LineChart</a>
               <a class="dropdown-item" href="#">BubbleChart</a>
               <RouterLink class="dropdown-item" to="/Pie"> Pie</RouterLink>
@@ -65,15 +52,8 @@ import { RouterLink, RouterView } from "vue-router";
           </li>
 
           <li class="nav-item dropdown mr-0">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="dropdown02"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               TP
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdown2">

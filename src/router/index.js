@@ -6,6 +6,7 @@ import PieView from '../views/chartjs/PieView.vue'
 import MapView from '../views/MapView.vue'
 import SncfView from '../views/SncfView.vue'
 import Service from '../views/Service.vue'
+import Service2 from '../views/Service2.vue'
 import LineChartView from '../views/chartjs/LineChartView.vue'
 import RadarView from '../views/chartjs/RadarView.vue'
 const router = createRouter({
@@ -50,6 +51,11 @@ const router = createRouter({
       path: '/Service',
       name: 'Service',
       component: Service
+    },
+    {
+      path: '/Service2',
+      name: 'Service2',
+      component: Service2
     },
     {
       path: '/Radar',
