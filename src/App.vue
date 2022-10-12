@@ -44,7 +44,7 @@ import { RouterLink, RouterView } from "vue-router";
               <a class="dropdown-item" href="#">BubbleChart</a>
               <RouterLink class="dropdown-item" to="/Pie"> Pie</RouterLink>
 
-              <a class="dropdown-item" href="#">Area</a>
+              <RouterLink class="dropdown-item" to="/Area"> Area</RouterLink>
               <RouterLink class="dropdown-item" to="/Radar"> Radar</RouterLink>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Animation</a>

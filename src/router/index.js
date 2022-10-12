@@ -9,6 +9,7 @@ import Service from '../views/Service.vue'
 import Service2 from '../views/Service2.vue'
 import LineChartView from '../views/chartjs/LineChartView.vue'
 import RadarView from '../views/chartjs/RadarView.vue'
+import AreaView from '../views/chartjs/AreaView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -61,6 +62,11 @@ const router = createRouter({
       path: '/Radar',
       name: 'Radar',
       component: RadarView
+    },
+    {
+      path: '/Area',
+      name: 'Area',
+      component: AreaView
     },
 
   ]
