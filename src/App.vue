@@ -28,6 +28,12 @@ import { RouterLink, RouterView } from "vue-router";
             <a class="nav-link" href="/Service2">Services 2</a>
           </li>
           <li class="nav-item">
+            <RouterLink class="nav-link" to="/TriFiltre01">Tri & Filtre 1</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/TriFiltre02">Tri & Filtre 2</RouterLink>
+          </li>
+          <li class="nav-item">
             <RouterLink class="nav-link" to="/Map">Géoloc</RouterLink>
           </li>
           <li class="nav-item">
