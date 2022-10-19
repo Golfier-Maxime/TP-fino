@@ -60,7 +60,7 @@ baseColor.value = 'rgba(0,0,255,#deg#)'
 
 let fields = ref()
 fields.value = [
-    { key: 'id', label: "id", type: "number", sortable: true, sort: 1, filter: "" },
+    { key: 'id', label: "Id", type: "number", sortable: true, sort: 1, filter: "" },
     { key: 'nom', label: "Nom", type: "string", sortable: true, sort: 1, filter: "" },
     { key: 'adresse', label: "Adresse", type: "string", sortable: true, sort: 1, filter: "" },
     { key: 'laSpecialite.nom', label: "Spécialité", type: "string", sortable: true, sort: 1, filter: "" },
@@ -76,7 +76,7 @@ onMounted(async () => {
     await getVillageois()
         .then(response => {
             items.value = response
-            console.log("items villageois", chartData.labels)
+
 
             fields.value.forEach((field) => {
                 let t = field.key.split(".")
@@ -102,10 +102,10 @@ const updateGraph = () => {
     chartOptions.plugins.title.text = "Spécialités des villageois"
     //
     chartData.labels = getLabels(items.value, 'laSpecialite.nom#1')
-    console.log("labels villageois", chartData.labels)
+
     //
     chartData.datasets[0].data = countDatas(items.value, chartData.labels, 'laSpecialite.nom#1')
-    console.log("data villageois", chartData.datasets[0].data)
+
     //
     chartData.datasets[0].label = "Spécialités"
     // 
@@ -147,7 +147,7 @@ const sortCol = (items, field) => {
 
 const tableFilter = (field) => {
     items.value = itemsAll.value.filter((villageois) => {
-        return villageois[field.key].toLowerCase().includes(field.filtrer.toLowerCase())
+        return villageois[field.key].toLowerCase().includes(field.filter.toLowerCase())
     })
     updateGraph()
 }
@@ -192,7 +192,7 @@ const tableFilter = (field) => {
                                     <span class="input-group-text">
                                         <i class="fa fa-filter fa-sm"></i>
                                     </span>
-                                    <input class="form-control" @input="tableFilter(field)" v-model="field.filter">
+                                    <input class="form-control" @input="tableFilter(field)" v-model="field.filter" />
                                 </div>
                             </th>
                         </tr>
