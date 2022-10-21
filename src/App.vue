@@ -27,18 +27,28 @@ import { RouterLink, RouterView } from "vue-router";
           <li>
             <a class="nav-link" href="/Service2">Services 2</a>
           </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link" to="/TriFiltre01">Tri & Filtre 1</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link" to="/TriFiltre02">Tri & Filtre 2</RouterLink>
+          <li class="nav-item dropdown mr-0">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Tri & Filtre
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <RouterLink class="dropdown-item" to="/TriFiltre01">Tri & Filtre 1</RouterLink>
+              <RouterLink class="dropdown-item" to="/TriFiltre02">Tri & Filtre 2</RouterLink>
+              <RouterLink class="dropdown-item" to="/TriFiltre03">Tri & Filtre 3</RouterLink>
+              <RouterLink class="dropdown-item" to="/TriFiltre04">Tri & Filtre 4</RouterLink>
+              <RouterLink class="dropdown-item" to="/TriFiltre05">Tri & Filtre 5</RouterLink>
+            </div>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" to="/Map">Géoloc</RouterLink>
+
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" to="/Sncf">SNCF</RouterLink>
+
           </li>
+
           <li class="nav-item dropdown mr-0">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">

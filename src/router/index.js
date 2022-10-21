@@ -9,6 +9,7 @@ import Service from '../views/Service.vue'
 import Service2 from '../views/Service2.vue'
 import TriFiltre01 from '../views/TriFiltre01.vue'
 import TriFiltre02 from '../views/TriFiltre02.vue'
+import TriFiltre03 from '../views/TriFiltre03.vue'
 import LineChartView from '../views/chartjs/LineChartView.vue'
 import RadarView from '../views/chartjs/RadarView.vue'
 import AreaView from '../views/chartjs/AreaView.vue'
@@ -79,6 +80,20 @@ const router = createRouter({
       path: '/TriFiltre02',
       name: 'TriFiltre02',
       component: TriFiltre02
+    },
+    {
+      path: '/TriFiltre03',
+      name: 'TriFiltre03',
+      component: TriFiltre03
+    },
+    {
+      path: '/TriFiltre04',
+      name: 'TriFiltre04',
+      component: () => import('../views/TriFiltre04.vue')
+    }, {
+      path: '/TriFiltre05',
+      name: 'TriFiltre05',
+      component: () => import('../views/TriFiltre05.vue')
     },
 
   ]
